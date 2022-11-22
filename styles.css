@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:opsz@9..144&display=swap');
+
+body {
+    margin: 0;
+}
+
+.overall {
+    font-family: 'Barlow', sans-serif;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+/* styling the first grid (that has the nav bar) */
+.parent {
+    grid-column: span 2;
+    background-image: url(image-heade.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+}
+
+.item1 {
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    width: 100%;  
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    height: 33px;
+    text-align: center;
+}
+
+ul li {
+    padding: 5px;
+}
+
+.parent h1 {
+    font-size: 2.7em;
+    text-align: center;
+    margin: 10% auto;
+    color: hsl(0, 0%, 100%);
+}
+
+.contact {
+    background-color: white;
+    border-radius: 50px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav p {
+    color: hsl(0, 0%, 100%);
+    font-size: 22px;
+    width: 20%;
+    font-weight: 600;
+    margin-left: 20px;
+    padding-top: 20px;
+    height: 33px;
+}
+
+/* styling the next grid (transform your brand) */
+.item2 {
+    background-color: hsl(0, 0%, 100%);
+    height: 70vh;
+    background-repeat: no-repeat;
+}
+
+.transform {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    margin: auto;
+}
+
+.transform h1 {
+    font-size: 2.5em;
+    color: hsl(212, 27%, 19%);
+}
+
+.transform p {
+    color: hsl(213, 9%, 39%);
+}
+
+.transform a {
+    color: hsl(212, 27%, 19%);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: hsl(51, 100%, 49%);
+}
+
+/* styling the next grid */
+.item3 {
+    height: 70vh;
+    background-image: url(image-transform.jpg);
+    background-position: center;
+}
+
+/* styling the next grid */
+.item4 {
+    height: 70vh;
+    background-image: url(image-stand-out.jpg);
+    background-position: center; 
+}
+
+/* styling the next grid (stand out to the right audience) */
+.item5 {
+    background-color: hsl(0, 0%, 100%);
+    height: 70vh;
+}
+
+.stand {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    margin: auto;
+}
+
+.stand h1 {
+    font-size: 2.5em;
+    color: hsl(212, 27%, 19%);
+}
+
+.stand p {
+    color: hsl(213, 9%, 39%);
+}
+
+.stand a {
+    color: hsl(212, 27%, 19%);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: hsl(7, 99%, 70%);
+}
+
+/* styling the graphic design grid */
+.item6 {
+    height: 70vh;
+    background-image: url(image-graphic-design.jpg);
+    background-position: center; 
+}
+
+.graphic {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 60%;
+    justify-content: center;
+    margin: 25% auto;
+    align-items: center;
+}
+
+.graphic h1, .graphic p {
+    color: hsl(167, 40%, 24%);
+    text-align: center;
+}
+
+/* styling photography grid */
+.item7 {
+    height: 70vh;
+    background-image: url(image-photography.jpg);
+    background-position: center; 
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 60%;
+    justify-content: center;
+    margin: 25% auto;
+    align-items: center;
+}
+
+.photo h1, .photo p {
+    color: hsl(198, 62%, 26%);
+    text-align: center;
+}
+
+/* styling the testimonials grid */
+.item8 {
+    box-sizing: border-box;
+    grid-column: span 2;
+    height: 70vh;
+    text-align: center;
+    color: hsl(213, 9%, 39%);
+}
+
+.item8 h1 {
+    font-size: 40px;
+    font-family: 'Barlow', sans-serif;
+    padding-left: 30px;
+    margin: 4% 0;
+    color: hsl(213, 9%, 39%);
+}
+
+.testimonial {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+}
+
+.testimony img {
+    border-radius: 50%;
+}
+
+.item8 h2 {
+    color: hsl(212, 27%, 19%);
+}
+
+/* styling the images grid */
+.item9 {
+    grid-column: span 2;
+}
+
+.imgs {
+    display: flex;
+}  
+
+.imgs img {
+    width: 100%;
+}
+
+/* styling the footer */
+.item10 {
+    background-color: hsl(168, 63%, 66%);
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    grid-column: span 2;
+    color: hsl(167, 40%, 24%);
+    box-sizing: border-box;
+}
+
+.foot{
+    margin: 5%;
+}
+
+.foot h1 {
+    font-size: 2.5em;
+    font-weight: bolder;
+    font-family: 'Barlow', sans-serif;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.icon {
+    /* padding: 30px; */
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+
+.icon img {
+    padding: 10px;
+}
